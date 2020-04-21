@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+body {
+  background-image: url(source7.gif);
+  background-size: cover;
+}
+.jumbotron {
+  text-align: center;
+  background-image: url(source3.gif);
+  background-size: contain;
+}
+
+input#songSlider {
+  background: linear-gradient(to right, rgb(0, 119, 255), rgb(114, 220, 255), rgb(120, 255, 255), rgb(158, 252, 255));
+  border: solid 1px royalblue;
+  border-radius: 8px;
+  height: 7px;
+  width: 356px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+#songSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(0, 153, 255);
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+#songSlider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: darkblue;
+  cursor: pointer;
+}
+
+.duration{
+  font-size: large;
+  font-weight: bold;
+}
+
+#nowplaying{
+    font-weight: bold;
+    font-style: oblique;
+}
+button#play{
+	width:36px;
+    height:36px;
+    color:green;
+}
+button#pause{
+	width:36px;
+    height:36px;
+    color:grey;
+}
+button#stop{
+	width:36px;
+    height:36px;
+    color:darkred;
+}
+button#previous{
+	width:36px;
+    height:36px;
+    color:black;
+}
+button#next{
+	width:36px;
+    height:36px;
+    color:black;
+}
+input#volume{
+  align-items: center;
+  width: 200px;
+  top: 40%;
+  color:black;
+  /*transform: rotate(270deg);*/
+}
+
+
+/*
+#songTracker{
+	position:relative;
+	width:100%;
+}
+.slidecontainer {
+  width: 100%;
+}
+#songTracker{
+  width: 250px;
+  height: 5px;
+  background-color:gray;
+  display: flex;
+  border-radius: 50px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+
+#songSlider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+  background: grey;
+  outline: 1px, black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+/*
+#tracker{
+  width: 250px;
+  height: 5px;
+  background-color:gray;
+  display: flex;
+  border-radius: 50px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+#songSlider{
+  height: 5px;
+  background-color:royalblue;
+  border-radius: 20px;
+}
+#handle{
+  width: 8px;
+  height: 8px;
+  background-color:royalblue;
+  border-radius: 50%;
+  margin-left: -5px;
+  transform: scale(2);
+}
+
+input#songSlider:hover {
+  opacity: 1;
+}
+*/

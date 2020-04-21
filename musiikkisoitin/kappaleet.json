@@ -1,0 +1,22 @@
+{
+    "kappaleet":[
+        {
+            "id": 1,
+            "title": "Soliloguy",
+            "artist": "-",
+            "link": "http://opengameart.org/sites/default/files/Soliloquy_1.mp3"
+        },
+        {
+            "id": 2,
+            "title": "Sigil",
+            "artist": "-",
+            "link": "http://opengameart.org/sites/default/files/Sigil_3.ogg"
+        },
+        {
+            "id": 3,
+            "title": "sadorchestral",
+            "artist": "-",
+            "link": "http://opengameart.org/sites/default/files/sadorchestralbgm%28syncopika%29.wa"
+        }
+    ]
+}

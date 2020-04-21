@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Musiikkisoitin</title>
+    <!--meta name="viewport" content="width=decive-width, initial-scale=1.0"!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="/player.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <style>
+        body {
+            background-color: rgb(49, 49, 49);
+        }
+
+        #audio-info {
+            text-align: center;
+        }
+
+        #audio-info.artist {
+            font-weight: bold;
+        }
+
+        button#play {
+            width: 36px;
+            height: 36px;
+            color: green;
+        }
+
+        button#pause {
+            width: 36px;
+            height: 36px;
+            color: grey;
+        }
+
+        button#stop {
+            width: 36px;
+            height: 36px;
+            color: darkred;
+        }
+
+        button#previous {
+            width: 36px;
+            height: 36px;
+            color: black;
+        }
+
+        button#next {
+            width: 36px;
+            height: 36px;
+            color: black;
+        }
+
+        input#volume {
+            position: absolute;
+            width: 100px;
+            top: 40%;
+            transform: rotate(270deg);
+        }
+
+        #duration {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            padding: 4px 8px;
+            background: #000;
+            border-radius: 5px;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <%- body %>
+</body>
+
+</html>
