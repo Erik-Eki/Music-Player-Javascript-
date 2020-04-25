@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
-const data = require('./kappaleet.json');
-const player = require('./player.js');
 
 const indexRouter = require('./routes/index');
 //const connection = new Database();
@@ -20,6 +18,9 @@ app.use(express.json({ limit: '10mb' }));
 
 app.use('/', indexRouter);
 
+//staattisen hakemiston julistaminen
+//app.use("/stylesheets",express.static(__dirname + "/stylesheets"));
+app.use(express.static(__dirname + '/'))
 
 app.listen(port, '0.0.0.0', () => console.log(`Listening on port ${port}!`));
 

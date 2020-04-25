@@ -2,21 +2,27 @@
     "kappaleet":[
         {
             "id": 1,
-            "title": "Soliloguy",
-            "artist": "-",
-            "link": "http://opengameart.org/sites/default/files/Soliloquy_1.mp3"
+            "title": "009 Sound System Dreamscape",
+            "artist": "Trance",
+            "link": "https://sound.peal.io/ps/audios/000/017/265/original/youtube_17265.mp3?1533627695"
         },
         {
             "id": 2,
-            "title": "Sigil",
-            "artist": "-",
-            "link": "http://opengameart.org/sites/default/files/Sigil_3.ogg"
+            "title": "Ebin loop",
+            "artist": "Erik",
+            "link": "ebin loop.mp3"
         },
         {
             "id": 3,
-            "title": "sadorchestral",
-            "artist": "-",
-            "link": "http://opengameart.org/sites/default/files/sadorchestralbgm%28syncopika%29.wa"
+            "title": "ebin loop 2",
+            "artist": "Erik",
+            "link": "ebin loop 2.mp3"
+        },
+        {
+            "id": 4,
+            "title": "Synthwave",
+            "artist": "Erik",
+            "link": "Synthwave.mp3"
         }
     ]
 }

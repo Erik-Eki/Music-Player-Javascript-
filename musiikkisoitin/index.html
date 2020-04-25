@@ -63,25 +63,40 @@
           </ol>
           <thead>
             <ul id="playlist">
-              <li class="current-song">
-                <a href="https://sound.peal.io/ps/audios/000/017/265/original/youtube_17265.mp3?1533627695">009
-                  Dreamscape</a>
-                </li>
-              <li>
+              <div id="songList">
+              </div>
+              <!--
+              <div class="current-song">
+                <a href="https://sound.peal.io/ps/audios/000/017/265/original/youtube_17265.mp3?1533627695">009 Dreamscape</a>
+                </div>
+              <div>
                 <a href="http://opengameart.org/sites/default/files/Soliloquy_1.mp3">Soliloquy 1</a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <a href="http://opengameart.org/sites/default/files/Sigil_3.ogg">Sigil 3</a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <a href="http://opengameart.org/sites/default/files/sadorchestralbgm%28syncopika%29.wav">Sad
                   Orchestral</a>
-                </li>
+                </div>
+                -->
             </ul>
           </thead>
           </ul>
         </div>
     </div>
+    <script>
+      var txt = "kappeleet.json"
+
+      //var jsonData = eval ("(" + txt + ")");
+      var jsonData = JSON.parse(txt);
+      for (var i = 0; i < jsonData.kappaleet.length; i++) {
+        var counter = jsonData.kappaleet[i];
+        //console.log(counter.counter_name);
+        alert(counter.title);
+      }
+
+    </script>
     <script>
       window.onload = function () {
         player = new Mediaplayer();
