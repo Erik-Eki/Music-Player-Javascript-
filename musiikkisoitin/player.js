@@ -10,10 +10,10 @@ var songTitles = [];
 var i = 0
 
 fetch(myRequest)
-    .then(function(response) {
+    .then(function (response) {
         return response.json();
     })
-    .then(function(data) {
+    .then(function (data) {
         //Etsii jokaisen kappaleet-objectin json-tiedostosta
         while (i < Object.keys(data.kappaleet).length) {
             //appendaa the songs-listaan
@@ -67,9 +67,9 @@ var Mediaplayer = function () {
     // Listaa biisit
     function getSongs() {
         var x;
-        for (x = 0; x < songs.length; x+=1) {
-                document.getElementById("playlist").innerHTML += "<div><a href='" + songs[x] + "'>" + songTitles[x] + "</a></div>";
-                //document.getElementById("playlist").innerHTML += "<div><a href='" + songs[x] + "'>" + songs[x] + "</a>" + songTitles[x] + "</div>";
+        for (x = 0; x < songs.length; x += 1) {
+            document.getElementById("playlist").innerHTML += "<div><a href='" + songs[x] + "'>" + songTitles[x] + "</a></div>";
+            //document.getElementById("playlist").innerHTML += "<div><a href='" + songs[x] + "'>" + songs[x] + "</a>" + songTitles[x] + "</div>";
             //var songTitle = document.getElementsByClassName('nowPlaying');
             //songTitle.innerHTML += songs[song] + '<br />';
             // Mahdollista myös biisin valinta, esim. painamalla biisin nimeä !
@@ -104,26 +104,26 @@ var Mediaplayer = function () {
         output.innerHTML = VolumeSlider.nodeValue;
 
         VolumeSlider.onchange = function () {
-          output.innerHTML = this.value;
-          //Koska range on 0-10, mutta volume toimii 0-1, pitää siis jakaa 10, joten saadan esim. 5 / 10 = 0.5
-          audio.volume = this.value / 10;
+            output.innerHTML = this.value;
+            //Koska range on 0-10, mutta volume toimii 0-1, pitää siis jakaa 10, joten saadan esim. 5 / 10 = 0.5
+            audio.volume = this.value / 10;
         }
-      }
+    }
 
-/*
-    function append_to_div(songList, data) {
-        document.getElementById("songList").innerText += data;
-      }
-      var song_name = "I am test";
-      var value = song_name.value.trim();
-
-      if (!value)
-        alert("Name Cannot be empty!");
-      else
-        append_to_div("my_div", value + "\n");
-
-      song_name.value = "";
-*/
+    /*
+        function append_to_div(songList, data) {
+            document.getElementById("songList").innerText += data;
+          }
+          var song_name = "I am test";
+          var value = song_name.value.trim();
+    
+          if (!value)
+            alert("Name Cannot be empty!");
+          else
+            append_to_div("my_div", value + "\n");
+    
+          song_name.value = "";
+    */
 
     function updateSongSlider() {
         var c = Math.round(audio.currentTime);
@@ -165,7 +165,7 @@ var Mediaplayer = function () {
             }
             $('#durationFull').html('/ ' + minFull + '.' + secFull);
             $('#progress').css('width', value + '%');
-            if (audio.currentTime === audio.duration){
+            if (audio.currentTime === audio.duration) {
                 $('#pause').hide();
                 $('#play').show();
             }
